@@ -1,16 +1,257 @@
+<template>
+    <div>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#articles">Articles</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
 
-// Define base and accent colors
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Pablo León</h1>
+            <h2>Software Developer</h2>
+        </div>
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>
+                        My name is Pablo León, I currently reside in Córdoba, where I work as a Software Developer in Redsys. 
+                        Passionate about web development and its application to improve the quality of life of people. 
+                        I dedicate my free time to participate as Organizer in the Google Developers Group (GDG), organizing 
+                        and giving talks about Programming and Technology, as well as in other local communities 
+                        (Women TechMakers, Python Córdoba, PHP Córdoba ...). 
+                        I like to stay in continuous learning and find ways to improve my work day by day.
+                    </p>
+                </div>
+                <div class="col-md-2 profilePhoto">
+                        <img src="../assets/me.jpg"/>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="October 2018 – March 2019">
+                <h3>Software Developer</h3>
+                <h4>Redsys</h4>
+                <p>
+                    Development (backend and frontend) of applications with Java and Spring Framework in an environment of agile methodologies.
+                </p>
+            </div>
+
+            <div data-date="March 2018 – October 2018">
+                <h3>Software Developer</h3>
+                <h4>Signlab</h4>
+                <p>
+                    Web apps development with CodeIgniter (Backend), VueJS (Frontend), and corporate websites with Wordpress
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>IES Gran Capitán</h3>
+            <span class="education-date">Sept 2016 - Jun 2018</span>
+            <h4>Certificate of Higher Education in Web Applications development</h4>
+            <p>I studied this higher education, learning languages ​​such as Java, Python, PHP and Javascript, as well as working with version control (github), preprocessors (sass, stylus ..), code debugging and test development </p>
+        </div>
+        <div class="education-block">
+            <h3>UNED</h3>
+            <span class="education-date">Jun 2016</span>
+            <h4>University Degree Psychology</h4>
+            <p>
+                I studied this university degree in order to better understand the emotions of other people and help them as much as possible
+            </p>
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="../assets/project.jpg" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Tweepy</h3>
+                        <p>
+                            Project developed together with my study partner @nievesborrero to put into practice our learning about Python, applying it to the treatment of data obtained from Twitter
+                        </p>
+                        <a href="https://github.com/tweepy-sysmana/sysmana2018">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="../assets/project.jpg" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Chatbot & Admin Panel</h3>
+                        <p>
+                            Chatbot developed in Dialogflow, managed in a management panel using NodeJs and Handlebars.js, as well as the APIs of Google Action, Giphy and Dialogflow
+                        </p>
+                        <a href="https://github.com/Proyecto-chatbot/panel-administracion-chatbot">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+    <!-- Articles-->
+    <div id="articles">
+        <h2 class="heading">Articles</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large article">
+                    <div class="project-image article-image">
+                        <img src="../assets/articles.png" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Una Introducción a la Programación Orientada a Aspectos</h3>
+                        <p>
+                            Article of the talk made during the <a href="https://informatica.iesgrancapitan.org/sysmanas/sysmana-xi/">Sysmana</a> event in February 2019 about Aspect Oriented Programming and its application in the Spring Framework
+                        </p>
+                        <a href="https://medium.com/@PabloLeonPsi/una-aproximaci%C3%B3n-a-la-programaci%C3%B3n-orientada-a-aspectos-a62d377ebe79">View Article</a>
+                    </div>
+                </div>
+
+                <div class="project shadow-large article">
+                    <div class="project-image article-image">
+                        <img src="../assets/articles.png" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Git histories</h3>
+                        <p>
+                            Articles about my experience with Git and Github, adding some initial tips and recommendations
+                        </p>
+                        <a href="https://medium.com/@PabloLeonPsi/mi-primer-d%C3%ADa-con-github-5a11ae2bd250">Mi primer día con Git</a> | 
+                        <a href="https://medium.com/@PabloLeonPsi/descubriendo-git-mas-all%C3%A1-del-add-commit-push-6efaed8ae26e">Descubriendo Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="background-alt">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Spring</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>CodeIgniter</li>
+            <li>Git</li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/pabloleonpsico@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2019 Pablo León Alcaide
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/pabloleonalcaide" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/users/8029716/pablo-león" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/pablo-leon-alcaide/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/PabloLeonPsi" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</template>
+<script>
+export default {
+  name: 'Portfolio'
+}
+</script>
+
+<style lang="scss">
+
 $base-color: #3498db;
 $base-color-hover: darken($base-color, 10%);
 
-// Define background colors
 $background: #fff;
 $background-alt: #f2f2f5;
 
-// Define border colors
 $border: #dcd9d9;
 
-// Define text colors
 $heading: #374054;
 $text: #74808a;
 
@@ -49,7 +290,6 @@ body {
     }
 }
 
-// No JS styles
 .no-js {
     #experience-timeline {
         > div {
@@ -294,18 +534,12 @@ footer {
     background: $background-alt;
 }
 
-/*
-    --------------------------
-    ----- 4. Lead Styles -----
-    --------------------------
-*/
-
 #lead {
     position: relative;
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../assets/lead-bg.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -661,15 +895,7 @@ footer {
         transition: background-color .3s;
         &:hover, &:focus {
             background-color: darken($base-color, 25%);
-          }
-        // display: inline-block;
-        // margin: 7px;
-        // padding: 5px 10px;
-        // color: $heading;
-        // background: darken($background-alt, 5%);
-        // list-style: none;
-        // cursor: default;
-        // font-size: 1.2em;
+          }    
     }
 }
 
@@ -775,7 +1001,6 @@ footer {
     }
 }
 
-// Collapse timeline
 @media only screen and (max-width: 750px) {
 
     #experience-timeline {
@@ -804,7 +1029,6 @@ footer {
 
 }
 
-// Medium Devices
 @media only screen and (max-width : 992px) {
 
     #lead {
@@ -844,7 +1068,6 @@ footer {
 
 }
 
-// Small Devices
 @media only screen and (max-width : 768px) {
 
     header {
@@ -919,7 +1142,6 @@ footer {
 
 }
 
-// Extra Small Devices
 @media only screen and (max-width : 480px) {
     #about {
         .profilePhoto {
@@ -944,3 +1166,5 @@ footer {
     }
 
 }
+
+</style>
