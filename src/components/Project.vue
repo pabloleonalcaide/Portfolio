@@ -14,13 +14,11 @@
 <script>
 export default {
   name: 'Project',
-  data(){
-    return {
-        title: '',
-        description: '',
-        link: ''
-    }
-  }
+  props: [
+        'title',
+        'description',
+        'link'
+        ]
 }
 </script>
 <style lang="scss" scoped>

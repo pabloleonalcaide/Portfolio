@@ -5,19 +5,15 @@
             <h3>IES Gran Capitán</h3>
             <span class="education-date">Sept 2016 - Jun 2018</span>
             <h4>Certificate of Higher Education in Web Applications development</h4>
-            <p>
-                I studied this higher education, learning languages ​​such as Java, Python, PHP and Javascript, as well as working with version control (Git), preprocessors (scss, stylus...), code debugging and test development
-            </p>
+            <p>I studied this higher education, learning languages such as Java, Python, PHP and Javascript, as well as working with version control (Git), preprocessors (scss, stylus...), code debugging and test development</p>
         </div>
         <div class="education-block">
             <h3>UNED</h3>
             <span class="education-date">Jun 2016</span>
             <h4>University Degree Psychology</h4>
-            <p>
-                I studied this university degree in order to better understand the emotions of other people and help them as much as possible
-            </p>
+            <p>I studied this university degree in order to better understand the emotions of other people and help them as much as possible</p>
         </div>
-    </div>  
+    </div>
 </template>
 <script>
 export default {
