@@ -725,7 +725,7 @@
     i.a
   },
   b0df: function (t, e, a) {
-    t.exports = "."  + a.p + "img/me.9ae720aa.jpg"
+    t.exports = "./"+ a.p + "img/me.9ae720aa.jpg"
   },
   b1f6: function (t, e, a) {},
   b252: function (t, e, a) {},
@@ -737,7 +737,7 @@
   },
   d0e3: function (t, e, a) {},
   d7ff: function (t, e, a) {
-    t.exports = "."  + a.p + "img/project.028242ba.jpg"
+    t.exports = "./"+ a.p + "img/project.028242ba.jpg"
   },
   e6e2: function (t, e, a) {
     "use strict";
