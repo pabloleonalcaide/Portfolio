@@ -1,20 +1,20 @@
 <template>
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
+        <h2 class="heading">Where I've been working on</h2>
         <div id="experience-timeline">
-            <div data-date="October 2018 – March 2019">
+            <div>
                 <h3>Software Developer</h3>
-                <h4>Redsys</h4>
+                <h4><b>Redsys</b> (2018-Actually)</h4>
                 <p>
-                    Development (backend and frontend) of applications with Java and Spring Framework in an environment of agile methodologies.
+                    Development of applications with Java (JEE) and Spring Framework in an environment of agile methodologies
                 </p>
             </div>
 
-            <div data-date="March 2018 – October 2018">
+            <div>
                 <h3>Software Developer</h3>
-                <h4>Signlab</h4>
+                <h4><b>Signlab</b> (2018)</h4>
                 <p>
-                    Web apps development with CodeIgniter (Backend), VueJS (Frontend), and corporate websites with Wordpress
+                    Web apps development with PHP (CodeIgniter), JS (VueJS), and corporate websites with Wordpress
                 </p>
             </div>
         </div>
@@ -30,54 +30,24 @@ export default {
 $background: #fff;
 $base-color: #3498db;
 $border: #dcd9d9;
-$heading: #374054;
+$heading: #333333;
 $text: #74808a;
 
 #experience {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid $border;
-
-    h2 {
-        color: $heading;
-    }
 }
 
 #experience-timeline {
     margin: 30px auto 0 auto;
     position: relative;
     max-width: 1000px;
-
-    &:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        bottom: 0;
-        left: 303px;
-        right: auto;
-        height: 100%;
-        width: 3px;
-        background: $base-color;
-        z-index: 0;
-    }
-
-    &:after {
-        position: absolute;
-        content: '';
-        width: 3px;
-        height: 40px;
-        background: $base-color;
-        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
-        top: 100%;
-        left: 303px;
-    }
-}
-.no-js {
-    #experience-timeline {
-        > div {
+    display: flex;
+    > div {
             background: $background;
-            padding: 10px;
-            margin-bottom: 10px;
+            padding: 15px;
+            margin: 10px;
             border: 1px solid $border;
 
             h3 {
@@ -105,6 +75,10 @@ $text: #74808a;
         &:before, &:after {
             content: none;
         }
+}
+@media only screen and (max-width : 480px){
+    #experience-timeline{
+        flex-direction: column;
     }
 }
 

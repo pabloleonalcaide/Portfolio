@@ -14,12 +14,10 @@
 <script>
 export default {
   name: 'SocialIcoList',
-  data() {
-    return{
-      link: '',
-      iconClass: ''
-    }
-  },
+  props:[ 
+    'link',
+    'iconClass'
+    ]
 }
 </script>
 <style lang="scss">

@@ -30,7 +30,7 @@ export default {
 <style lang="scss">
 
 $border: #dcd9d9;
-$heading: #374054;
+$heading: #333333;
 $text: #74808a;
 
 #about {

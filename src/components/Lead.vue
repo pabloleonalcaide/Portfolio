@@ -7,7 +7,7 @@
         <div id="lead-overlay"></div>
         <div id="lead-down">
             <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <a href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
             </span>
         </div>
     </div>
@@ -19,8 +19,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-$base-color: #3498db;
-$base-color-hover: darken($base-color, 10%);
+$primary-color: #8F54A3;
+$primary-color-hover: darken($primary-color, 10%);
 
 #lead {
     position: relative;
@@ -55,7 +55,7 @@ $base-color-hover: darken($base-color, 10%);
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: lighten($primary-color, 25%);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -70,7 +70,7 @@ $base-color-hover: darken($base-color, 10%);
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: rgba($primary-color-hover, 0.8);
     z-index: 1;
 }
 
@@ -91,7 +91,7 @@ $base-color-hover: darken($base-color, 10%);
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 3px solid lighten($primary-color, 25%);
         text-align:center;
     }
 
@@ -101,4 +101,24 @@ $base-color-hover: darken($base-color, 10%);
         padding-top: 5px;;
     }
 }
+@media only screen and (max-width : 480px) {
+    #lead-content {
+        top: 40%;
+        h1 {
+            font-size: 3em;
+            line-height: 1.2
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        a {
+            font-size: 0.9em;
+            padding: 5px 10px;
+        }
+    }
+
+}
+
 </style>

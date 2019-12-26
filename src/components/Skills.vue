@@ -1,6 +1,6 @@
 <template>
     <div id="skills" class="background-alt">
-        <h2 class="heading">Skills</h2>
+        <h2 class="heading">What have I worked with?</h2>
         <ul>
             <li>Python</li>
             <li>Java</li>
@@ -22,15 +22,14 @@ export default {
 </script>
 <style lang="scss">
 
-$base-color: #3498db;
-$heading: #374054;
+$secondary-color: #91842f;
+$heading: #333333;
 
 #skills {
     padding: 50px 15px;
     text-align: center;
 
     h2 {
-        color: $heading;
         margin-bottom: 50px;
     }
 
@@ -51,12 +50,13 @@ $heading: #374054;
         border-radius: 2px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
         
-        background-color:$base-color;
-        color: #ecf0f1;
+        background-color: #fff;
+        color: $secondary-color;
         
         transition: background-color .3s;
         &:hover, &:focus {
-            background-color: darken($base-color, 25%);
+            background-color: $secondary-color;
+            color: #fff;
           }    
     }
 }

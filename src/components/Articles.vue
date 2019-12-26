@@ -1,11 +1,11 @@
 <template>
      <div id="articles">
-        <h2 class="heading">Articles</h2>
+        <h2 class="heading">Sometimes I Write...</h2>
         <div class="container">
             <div class="row">
                 <div class="article-block shadow-large article">
                     <div class="article-image">
-                        <img src="../assets/articles.png" />
+                        <img :src="image" />
                     </div>
                     <div class="article-info">
                         <h3>Una Introducción a la Programación Orientada a Aspectos</h3>
@@ -18,7 +18,7 @@
 
                 <div class="article-block shadow-large article">
                     <div class="article-image">
-                        <img src="../assets/articles.png" />
+                        <img :src="image" />
                     </div>
                     <div class="article-info">
                         <h3>Git histories</h3>
@@ -35,12 +35,17 @@
 </template>
 <script>
 export default {
-  name: 'Articles'
+  name: 'Articles',
+  data () {
+      return{
+          image: require('@/assets/articles.png')
+      }
+  }
 }
 </script>
 <style lang="scss">
 
-$heading: #374054;
+$heading: #333333;
 $text: #74808a;
 
 .article{
@@ -54,9 +59,10 @@ $text: #74808a;
     background: #fff;
     border-radius: 4px;
     display: flex;
+    border-radius: 40px 4px 4px 40px;
 }
 .article-image {
-    flex: 0 0 20em;
+    flex: 0 0 15em;
     img{
         width: 100%
     }

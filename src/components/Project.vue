@@ -1,7 +1,7 @@
 <template>
   <div class="project shadow-large">
       <div class="project-image">
-          <img src="../assets/project.jpg" />
+          <img :src="image" />
       </div>
       <div class="project-info">
           <h3>{{title}}</h3>
@@ -14,6 +14,11 @@
 <script>
 export default {
   name: 'Project',
+  data(){
+      return{
+          image: require('@/assets/project.jpg')
+      }
+  },
   props: [
         'title',
         'description',
@@ -23,7 +28,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-$heading: #374054;
+$heading: #333333;
 $text: #74808a;
 
 .project-image {

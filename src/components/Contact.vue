@@ -18,7 +18,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-$base-color: #3498db;
+$secondary-color: #91842f;
 
 @mixin transition($duration: 0.5s, $func: ease, $property: all) {
     transition: #{$duration} #{$func} #{$property};
@@ -45,13 +45,13 @@ $base-color: #3498db;
 }
 
 #contact {
-    padding: 50px 15px;
-    background: $base-color;
-    text-align: center;
+    background: linear-gradient(top, $secondary-color 0%, white 2%);
 
+    padding: 50px 15px;
+    text-align: center;
     h2 {
         margin: 0 0 15px 0;
-        color: #fff;
+        color: $secondary-color;
         font-weight: 500;
     }
 }
@@ -68,7 +68,7 @@ $base-color: #3498db;
         border-radius: 4px;
         border: none;
         margin-bottom: 10px;
-        background: darken($base-color, 15%);
+        background: $secondary-color;
         color: #fff;
         @include transition();
         @include placeholder {
@@ -77,7 +77,7 @@ $base-color: #3498db;
 
         &:focus {
             outline: none;
-            background: darken($base-color, 25%);
+            background: darken($secondary-color, 5%);
         }
     }
 
@@ -93,7 +93,7 @@ $base-color: #3498db;
         border-radius: 4px;
         padding: 5px 10px;
         border: none;
-        color: $base-color;
+        color: $secondary-color;
         font-weight: 700;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         @include transition();

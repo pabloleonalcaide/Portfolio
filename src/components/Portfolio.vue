@@ -56,16 +56,18 @@ export default {
 
 $base-color: #3498db;
 $base-color-hover: darken($base-color, 10%);
-
+$secondaryColor: #91842f;
 $background: #fff;
-$background-alt: #f2f2f5;
+$background-alt: rgba(115, 42, 140, 0.8);
 
 $border: #dcd9d9;
 
-$heading: #374054;
+$heading: #333333;
 $text: #74808a;
 
-
+html {
+    scroll-behavior: smooth !important;
+}
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -73,6 +75,12 @@ body {
     &.active {
         overflow: hidden;
         z-index: -1;
+    }
+    a {
+        color: $secondaryColor;
+        &:hover{
+            color: darken($secondaryColor, 10%);
+        }
     }
 }
 
@@ -97,7 +105,7 @@ body {
     position: relative;
     display: inline-block;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 0 30px 0;
 
     &:after {
@@ -109,12 +117,15 @@ body {
         left: 0;
         right: 0;
         margin: 0 auto;
-        background: $base-color;
+        background: $secondaryColor;
     }
 }
 
 .background-alt {
     background: $background-alt;
+    .heading{
+        color: #fff;
+    }
 }
 
 @keyframes scaleAnimation {
@@ -162,48 +173,12 @@ body {
     }
 }
 
-.vtimeline-point {
-    position: relative;
-    display: block;
-    vertical-align: top;
-    margin-bottom: 30px;
-}
-
-.vtimeline-icon {
-    position: relative;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    background: $base-color;
-    border-radius: 50%;
-    float: left;
-    z-index: 99;
-    margin-left: 280px;
-
-    i {
-        display: block;
-        font-size: 2em;
-        margin-top: 10px;
-    }
-}
-
-.vtimeline-date {
-    width: 260px;
-    text-align: right;
-    position: absolute;
-    left: 0;
-    top: 10px;
-    font-weight: 300;
-    color: #374054;
-}
-
 #projects, #articles {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
 
     h2 {
-        color: $heading;
         margin-bottom: 50px;
     }
 }
@@ -223,23 +198,6 @@ body {
         &:before, &:after {
             left: 23px;
         }
-    }
-
-    .vtimeline-date {
-        width: auto;
-        text-align: left;
-        position: relative;
-        margin-bottom: 15px;
-        display: block;
-        margin-left: 70px;
-    }
-
-    .vtimeline-icon {
-        margin-left: 0;
-    }
-
-    .vtimeline-content {
-        margin-left: 70px;
     }
 
 }
@@ -292,10 +250,6 @@ body {
         animation: none;
         bottom: 0;
         height: 100%;
-    }
-
-    #mobile-menu-open, #mobile-menu-close {
-        display: block;
     }
 
     #menu {
@@ -357,26 +311,12 @@ body {
 
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 996px) {
     #about {
         .profilePhoto {
             img{
-                width: 40%;
+                display: none;
             }
-        }
-    }
-    #lead-content {
-        h1 {
-            font-size: 1.5em;
-        }
-
-        h2 {
-            font-size: 1em;
-        }
-
-        a {
-            font-size: 0.9em;
-            padding: 5px 10px;
         }
     }
 

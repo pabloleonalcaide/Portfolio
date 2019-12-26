@@ -36,7 +36,7 @@ export default {
 </script>
 <style lang="scss">
 
-$base-color: #3498db;
+$base-color: #91842f;
 $base-color-hover: darken($base-color, 10%);
 $background: #fff;
 

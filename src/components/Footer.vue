@@ -33,28 +33,33 @@ export default {
   components: {
     SocialIcoList
   },
-  props: {
-    socialIcons: [
-      {link: "https://github.com/pabloleonalcaide", iconClass:"fa-github"},
-      {link: "https://stackoverflow.com/users/8029716/pablo-león", iconClass:"fa-stack-overflow"},
-      {link: "https://www.linkedin.com/in/pablo-leon-alcaide/", iconClass:"fa-linkedin"},
-      {link: "https://twitter.com/PabloLeonPsi", iconClass:"fa-twitter"}
-    ]
+  data(){
+    return{
+        socialIcons: [
+        {link: "https://github.com/pabloleonalcaide", iconClass:"fa-github"},
+        {link: "https://stackoverflow.com/users/8029716/pablo-león", iconClass:"fa-stack-overflow"},
+        {link: "https://www.linkedin.com/in/pablo-leon-alcaide/", iconClass:"fa-linkedin"},
+        {link: "https://twitter.com/PabloLeonPsi", iconClass:"fa-twitter"}
+        ]
+    }
   }
 }
 </script>
 <style lang="scss">
+$secondary-color: #91842f;
 
 $base-color: #3498db;
 $text: #74808a;
 
 footer {
+    background: linear-gradient(top, $secondary-color 0%, white 2%);
+
     padding: 50px 0;
 }
 
 .copyright {
     padding-top: 20px;
-
+    color: #333333
     p {
         margin: 0;
         color: $text;
@@ -76,12 +81,7 @@ footer {
 
     a {
         display: block;
-        color: $text;
         padding: 10px;
-
-        &:hover {
-            color: $base-color;
-        }
     }
 }
 .top {
@@ -100,6 +100,11 @@ footer {
 
     i {
         color: $text;
+    }
+}
+@media only screen and (max-width : 480px) {
+    #to-top{
+        display: none;
     }
 }
 </style>

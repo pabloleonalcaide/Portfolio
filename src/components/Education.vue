@@ -1,6 +1,6 @@
 <template>
     <div id="education">
-        <h2 class="heading">Education</h2>
+        <h2 class="heading">Where I've (officially) studied</h2>
         <div class="education-block">
             <h3>IES Gran Capitán</h3>
             <span class="education-date">Sept 2016 - Jun 2018</span>
@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 
 $border: #dcd9d9;
-$heading: #374054;
+$heading: #333333;
 $text: #74808a;
 
 #education {
