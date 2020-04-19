@@ -15,7 +15,6 @@
                         <a href="https://medium.com/@PabloLeonPsi/una-aproximaci%C3%B3n-a-la-programaci%C3%B3n-orientada-a-aspectos-a62d377ebe79">View Article</a>
                     </div>
                 </div>
-
                 <div class="article-block shadow-large article">
                     <div class="article-image">
                         <img :src="image" />
@@ -27,6 +26,18 @@
                         </p>
                         <a href="https://medium.com/@PabloLeonPsi/mi-primer-d%C3%ADa-con-github-5a11ae2bd250">Mi primer día con Git</a> | 
                         <a href="https://medium.com/@PabloLeonPsi/descubriendo-git-mas-all%C3%A1-del-add-commit-push-6efaed8ae26e">Descubriendo Git</a>
+                    </div>
+                </div>
+                                <div class="article-block shadow-large article">
+                    <div class="article-image">
+                        <img :src="image" />
+                    </div>
+                    <div class="article-info">
+                        <h3>Apuntes sobre Arquitecturas Limpias</h3>
+                        <p>
+                            Introductory notes about clean architectures in software development
+                        </p>
+                        <a href="https://medium.com/@PabloLeonPsi/apuntes-sobre-arquitecturas-limpias-de-software-vol-1-1a91131933e2">View Article</a>
                     </div>
                 </div>
             </div>
@@ -48,6 +59,9 @@ export default {
 $heading: #333333;
 $text: #74808a;
 
+#articles{
+    text-align: center;
+}
 .article{
     flex-direction:row-reverse;
 }

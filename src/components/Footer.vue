@@ -52,7 +52,7 @@ $base-color: #3498db;
 $text: #74808a;
 
 footer {
-    background: linear-gradient(top, $secondary-color 0%, white 2%);
+    background: linear-gradient(to bottom, $secondary-color 0%, white 2%);
 
     padding: 50px 0;
 }

@@ -33,6 +33,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 #projects{
+  text-align: center;
   .project {
       position: relative;
       max-width: 900px;
@@ -41,6 +42,7 @@ export default {
       background: #fff;
       border-radius: 4px 40px 40px 4px;
       display: flex;
+      justify-content: space-between;
   }
 }
 

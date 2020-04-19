@@ -176,8 +176,6 @@ body {
 #projects, #articles {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
-    text-align: center;
-
     h2 {
         margin-bottom: 50px;
     }

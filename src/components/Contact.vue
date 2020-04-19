@@ -45,7 +45,7 @@ $secondary-color: #91842f;
 }
 
 #contact {
-    background: linear-gradient(top, $secondary-color 0%, white 2%);
+    background: linear-gradient(to bottom, $secondary-color 0%, white 2%);
 
     padding: 50px 15px;
     text-align: center;
@@ -59,6 +59,11 @@ $secondary-color: #91842f;
 #contact-form {
     max-width: 500px;
     margin: 0 auto;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     input, textarea {
         display: block;
@@ -86,7 +91,7 @@ $secondary-color: #91842f;
         resize: none;
     }
 
-    button {
+    button[type="submit"] {
         display: block;
         width: 100%;
         background: #fff;
@@ -99,7 +104,7 @@ $secondary-color: #91842f;
         @include transition();
 
         &:hover {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
     }
 }

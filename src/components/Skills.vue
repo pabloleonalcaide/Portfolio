@@ -12,6 +12,21 @@
             <li>CodeIgniter</li>
             <li>Git</li>
         </ul>
+        <h3 class="heading">Also I'm learning...</h3>
+        <ul class="learning">
+            <li>
+                <a
+                >TDD</a>
+            </li>
+            <li>
+                <a
+                >DDD</a>
+            </li>
+            <li>
+                <a
+                >Hexagonal Architecture</a>
+            </li>
+        </ul>
         <!-- Learning TDD, DDD, Testing... Related to Courses-->
     </div>
 </template>
@@ -19,6 +34,7 @@
 export default {
   name: 'Skills'
 }
+
 </script>
 <style lang="scss">
 

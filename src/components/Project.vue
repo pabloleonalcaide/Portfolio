@@ -1,12 +1,10 @@
 <template>
   <div class="project shadow-large">
-      <div class="project-image">
-          <img :src="image" />
-      </div>
       <div class="project-info">
           <h3>{{title}}</h3>
-          <p>{{description}}
-          </p>
+          <p>{{description}}</p>
+      </div>
+      <div class="project-ref">
           <a :href=link>View Project</a>
       </div>
   </div>
@@ -14,11 +12,6 @@
 <script>
 export default {
   name: 'Project',
-  data(){
-      return{
-          image: require('@/assets/project.jpg')
-      }
-  },
   props: [
         'title',
         'description',
@@ -30,11 +23,24 @@ export default {
 
 $heading: #333333;
 $text: #74808a;
-
-.project-image {
-    flex: 0 0 20em;
-    img{
-        width: 100%
+.project-info{
+    text-align: initial;
+}
+.project-ref {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #91842f;
+    min-width: 15%;
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        transition: 1s ease-in;
+        &:hover{
+            padding-left: 12px;
+            text-decoration: underline;
+        }
     }
 }
 
