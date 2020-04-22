@@ -263,7 +263,7 @@
           a = t._self._c || e;
         return a("div", {
           staticClass: "article-info"
-        }, [a("h3", [t._v("Apuntes sobre Arquitecturas Limpias")]), a("p", [t._v(" Introductory notes about clean architectures in software development ")]), a("a", {
+        }, [a("h3", [t._v("Apuntes sobre Arquitecturas Limpias")]), a("p", [t._v("Article with some introductory notes about Clean Architectures in software development")]), a("a", {
           attrs: {
             href: "https://medium.com/@PabloLeonPsi/apuntes-sobre-arquitecturas-limpias-de-software-vol-1-1a91131933e2"
           }
@@ -387,7 +387,7 @@
           attrs: {
             id: "experience-timeline"
           }
-        }, [a("div", [a("h3", [t._v("Software Developer")]), a("h4", [a("b", [t._v("Redsys")]), t._v(" (2018-Actually)")]), a("p", [t._v(" Development of applications with Java (JEE) and Spring Framework in an environment of agile methodologies ")])]), a("div", [a("h3", [t._v("Software Developer")]), a("h4", [a("b", [t._v("Signlab")]), t._v(" (2018)")]), a("p", [t._v(" Web apps development with PHP (CodeIgniter), JS (VueJS), and corporate websites with Wordpress ")])])])])
+        }, [a("div", [a("h3", [t._v("Software Developer")]), a("h4", [a("b", [t._v("Redsys")]), t._v(" (2018-Actually)")]), a("p", [t._v(" Development of applications with Java (JEE), Spring Framework and Angular in an environment of agile methodologies ")])]), a("div", [a("h3", [t._v("Software Developer")]), a("h4", [a("b", [t._v("Signlab")]), t._v(" (2018)")]), a("p", [t._v(" Web apps development with PHP (CodeIgniter), JS (VueJS), and corporate websites with Wordpress ")])])])])
       }],
       I = {
         name: "Experience"
