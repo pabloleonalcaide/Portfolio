@@ -6,7 +6,7 @@
                 <h3>Software Developer</h3>
                 <h4><b>Redsys</b> (2018-Actually)</h4>
                 <p>
-                    Development of applications with Java (JEE) and Spring Framework in an environment of agile methodologies
+                    Development of applications with Java (JEE), Spring Framework and Angular in an environment of agile methodologies
                 </p>
             </div>
 

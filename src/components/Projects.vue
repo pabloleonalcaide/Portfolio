@@ -15,7 +15,7 @@
                 />
                 <Project 
                   title="WebChat"
-                  description="A simple WebChat using Vue as frontend framework and Ruby&Rails as Back API"
+                  description="Article with some introductory notes about Clean Architectures in software development"
                   link="https://github.com/pabloleonalcaide/webChat"
                 />
             </div>
