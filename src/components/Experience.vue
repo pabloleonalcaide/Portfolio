@@ -2,27 +2,31 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Where I've been working on</h2>
         <div id="experience-timeline">
-            <div>
-                <h3>Software Developer</h3>
-                <h4><b>Redsys</b> (2018-Actually)</h4>
-                <p>
-                    Development of applications with Java (JEE), Spring Framework and Angular in an environment of agile methodologies
-                </p>
-            </div>
-
-            <div>
-                <h3>Software Developer</h3>
-                <h4><b>Signlab</b> (2018)</h4>
-                <p>
-                    Web apps development with PHP (CodeIgniter), JS (VueJS), and corporate websites with Wordpress
-                </p>
-            </div>
+            <ExperienceItem
+              v-for="(item, index) in works"
+              v-bind:key="index"
+              v-bind:work="item"
+            />
         </div>
     </div>
 </template>
 <script>
+import ExperienceItem from './ExperienceItem'
 export default {
-  name: 'Experience'
+  name: 'Experience',
+  components: {ExperienceItem},
+  data() {
+    return {
+        works: [
+            {name:"Atmira Espacio de Consultoría",role:"Mid Software Developer",period:"2020-Present",
+            description:"Webb apps development with SpringBoot and Angular in a project with multiple external contributors"},
+            {name:"Redsys ",role:"Junior Software Developer",period:"2018-2020",
+            description:"Development of applications with Java (JEE), Spring Framework and Angular in an environment of agile methodologies"},
+            {name:"Signlab Nuevas Tecnologías",role:"Junior Software Developer",period:"2018",
+            description:"Web apps development with PHP (CodeIgniter), JS (VueJS), and corporate websites with Wordpress"}
+        ]
+    }
+}
 }
 </script>
 <style lang="scss" scoped>
@@ -44,37 +48,9 @@ $text: #74808a;
     position: relative;
     max-width: 1000px;
     display: flex;
-    > div {
-            background: $background;
-            padding: 15px;
-            margin: 10px;
-            border: 1px solid $border;
-
-            h3 {
-                font-size: 1.5em;
-                font-weight: 300;
-                color: $heading;
-                display: inline-block;
-                margin: 0;
-            }
-
-            h4 {
-                font-size: 1.2em;
-                font-weight: 300;
-                color: #7e8890;
-                margin: 0 0 15px 0;
-            }
-
-            p {
-                color: $text;
-                font-size: 0.9em;
-                margin: 0;
-            }
-        }
-
-        &:before, &:after {
-            content: none;
-        }
+    &:before, &:after {
+        content: none;
+    }
 }
 @media only screen and (max-width : 480px){
     #experience-timeline{
